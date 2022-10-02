@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { useEffect, useRef, useState } from "react";
-import HALO from "vanta/dist/vanta.halo.min";
+import HALO from "vanta/dist/vanta.rings.min";
 import * as THREE from "three";
 import { Container, Row, Col } from "reactstrap";
 // import { Link } from "react-router-dom";
@@ -28,11 +28,20 @@ export default function Home() {
           // midtoneColor: 0x20b4c2,
           // lowlightColor: 0xffffff,
           // baseColor: 0xffffff
+
+          // mouseControls: true,
+          // touchControls: true,
+          // gyroControls: false,
+          // minHeight: 200.00,
+          // minWidth: 200.00
+
           mouseControls: true,
           touchControls: true,
           gyroControls: false,
           minHeight: 200.00,
-          minWidth: 200.00
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00
         })
       );
     }
