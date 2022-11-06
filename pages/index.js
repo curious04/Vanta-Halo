@@ -40,6 +40,8 @@ export default function Home() {
           gyroControls: false,
           minHeight: 200.00,
           minWidth: 200.00,
+          waveSpeed: 10,
+          shininess: 50,
           scale: 1.00,
           scaleMobile: 1.00
         })
